@@ -57,7 +57,17 @@
                 "uiTheme": "vs-dark",
                 "path": "./theme/mirkwood-soft.json"
             }
-        ]
+        ],
+        "configurationDefaults": {
+            "[mirkwood]": {
+                "editor.fontFamily": "Fira Code, monospace",
+                "editor.fontLigatures": true
+            },
+            "[mirkwood-soft]": {
+                "editor.fontFamily": "Fira Code, monospace",
+                "editor.fontLigatures": true
+            }
+        }
     },
     "devDependencies": {
         "@vscode/vsce": "^4.0.0",

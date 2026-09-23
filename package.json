@@ -1,0 +1,69 @@
+{
+    "name": "mirkwood-theme",
+    "version": "1.0.0",
+    "displayName": "Mirkwood Theme",
+    "homepage": "https://draculatheme.com/",
+    "description": "A dark theme for Visual Studio Code inspired by the forest of Mirkwood.",
+    "license": "MIT",
+    "publisher": "Anonymous2583",
+    "scripts": {
+        "build": "node ./scripts/build.js",
+        "lint": "node ./scripts/lint.js",
+        "package": "vsce package -o ./bin/mirkwood.vsix",
+        "vscode:prepublish": "npm run build",
+        "vsce-publish": "vsce publish"
+    },
+    "maintainers": [
+        "Dhruv Meghwal (anonymous2583)"
+    ],
+    "contributors": [
+        "Dhruv Meghwal (anonymous2583)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Anonymous-25/vscode-mirkwood-theme.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Anonymous-25/vscode-mirkwood-theme/issues"
+    },
+    "engines": {
+        "vscode": "^1.13.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "keywords": [
+        "mirkwood",
+        "dark",
+        "theme",
+        "forest",
+        "nature",
+        "green"
+    ],
+    "icon": "icon.png",
+    "galleryBanner": {
+        "color": "#3c4557",
+        "theme": "dark"
+    },
+    "contributes": {
+        "themes": [
+            {
+                "label": "Mirkwood Theme",
+                "uiTheme": "vs-dark",
+                "path": "./theme/mirkwood.json"
+            },
+            {
+                "label": "Mirkwood Theme Soft",
+                "uiTheme": "vs-dark",
+                "path": "./theme/mirkwood-soft.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "@vscode/vsce": "^4.0.0",
+        "js-yaml": "^4.3.2",
+        "prettier": "^3.0.0",
+        "tinycolor2": "^1.6.0",
+        "vsce": "^2.15.0"
+    }
+}
